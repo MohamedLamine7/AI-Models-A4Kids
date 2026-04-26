@@ -33,7 +33,7 @@ const aiModels = [
     length: "Illimité (modèles internes uniquement)",
     res: "2K",
     method: "Prompt",
-    pros: "Bon pour production image intensive.",
+    pros: "Bon pour la production intensive.",
     cons: "Pas illimité pour vidéo / modèles externes.",
     link: "https://leonardo.ai",
     pricingLink: "https://leonardo.ai/pricing"
