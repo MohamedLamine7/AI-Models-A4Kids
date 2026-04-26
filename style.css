@@ -1,0 +1,151 @@
+:root {
+    --bg-main: #020617;
+    --card-bg: rgba(30, 27, 75, 0.6);
+    --accent-prompt: #0ea5e9; /* Sky Blue */
+    --accent-node: #10b981;   /* Emerald Green */
+    --accent-hybrid: #8b5cf6; /* Purple */
+    --pro-green: #4ade80;
+    --con-red: #fb7185;
+    --gold: #fbbf24;
+}
+
+body {
+    background: radial-gradient(circle at top, #1e293b 0%, #020617 100%);
+    background-attachment: fixed;
+    color: #f8fafc;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 40px;
+}
+
+header { text-align: center; margin-bottom: 50px; }
+
+header h1 {
+    font-size: 3.5rem;
+    background: linear-gradient(to right, #60a5fa, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.legend { margin-top: 15px; color: #94a3b8; font-size: 0.9rem; }
+.legend-item { margin: 0 10px; }
+
+#sort-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+#sort-btn:hover { background: #fff; color: #020617; }
+
+#model-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+/* Base Card Styling */
+.card {
+    background: var(--card-bg);
+    backdrop-filter: blur(15px);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.card:hover { transform: translateY(-5px); }
+
+/* Dynamic Header Backgrounds */
+.card-header { padding: 25px 30px; }
+
+.bg-prompt-only {
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.2) 0%, transparent 100%);
+    border-bottom: 2px solid var(--accent-prompt);
+}
+
+.bg-nodes-only {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, transparent 100%);
+    border-bottom: 2px solid var(--accent-node);
+}
+
+.bg-hybrid {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, transparent 100%);
+    border-bottom: 2px solid var(--accent-hybrid);
+}
+
+/* Title & Symbols */
+.card h2 {
+    margin: 10px 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.6rem;
+}
+
+.icon-node { color: var(--accent-node); text-shadow: 0 0 10px var(--accent-node); }
+.icon-prompt { color: var(--accent-prompt); text-shadow: 0 0 10px var(--accent-prompt); }
+
+/* Content Styling */
+.card-body { padding: 0 30px 30px 30px; flex-grow: 1; display: flex; flex-direction: column; }
+
+.quality-badge {
+    background: rgba(251, 191, 36, 0.1);
+    color: var(--gold);
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.price-box { font-size: 2.2rem; font-weight: 800; margin: 20px 0; }
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    background: rgba(0,0,0,0.3);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.pros { color: var(--pro-green); font-size: 0.9rem; margin-top: 15px; }
+.cons { color: var(--con-red); font-size: 0.9rem; margin-top: 8px; }
+
+.btn-launch {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    /* On réduit le padding vertical à 8px pour l'effet "slim" */
+    padding: 8px 16px; 
+    border-radius: 20px; /* Bordures plus arrondies pour un look moderne */
+    font-size: 0.85rem; /* Texte légèrement plus petit */
+    font-weight: 500;
+    margin-top: 25px;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Coupe le lien proprement s'il est trop long */
+    white-space: nowrap;
+}
+
+.btn-launch:hover {
+    background: #fff;
+    color: #020617;
+    border-color: #fff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
