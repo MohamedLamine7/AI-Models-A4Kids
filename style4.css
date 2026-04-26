@@ -298,3 +298,26 @@ header h1 {
     background: var(--accent-prompt-negative) ;
     color: var(--bg-main)
 }
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    /* max-width: 800px; */
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.header h1 {
+    grid-column: 2;
+    justify-self: center;
+    margin: 0;
+}
+
+.header h5 {
+    grid-column: 3;
+    justify-self: end;
+    margin: 0;
+    font-weight: normal;
+    opacity: 0.7;
+}
