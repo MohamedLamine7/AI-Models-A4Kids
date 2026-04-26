@@ -17,7 +17,7 @@ const aiModels = [
         price: "$189/mois",
         numericPrice: 189,
         quality: "Design & Vidéo Rapide",
-        length: "Accès Premium Illimité",
+        length: "Illimité",
         res: "4K (Upscalé)",
         method: "Prompt Uniquement",
         pros: "Mode"+ ' "Pikaso" '+ "en Temps Réel.",
