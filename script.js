@@ -4,7 +4,7 @@ const aiModels = [
         price: "$100/mois",
         numericPrice: 100,
         quality: "Logique Pro / ADN Personnage",
-        length: "Illimité (selon GPU)",
+        length: "limité",
         res: "4K+ (Upscale Nodes)",
         method: "Nodes Uniquement",
         pros: "Utilise des Nodes (Noeuds).",
