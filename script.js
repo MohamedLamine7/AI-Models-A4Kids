@@ -1,4 +1,4 @@
-const qaiModels = [
+const aiModels = [
     {
         name: "ComfyUI",
         price: "$100/mois",
