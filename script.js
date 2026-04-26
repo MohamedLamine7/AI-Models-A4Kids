@@ -30,7 +30,7 @@ const aiModels = [
     price: "$60/mois",
     numericPrice: 60,
     quality: "2D stylisé",
-    length: "Illimité (modèles internes uniquement)",
+    length: "Illimité",
     res: "2K",
     method: "Prompt",
     pros: "Bon pour la production intensive.",
