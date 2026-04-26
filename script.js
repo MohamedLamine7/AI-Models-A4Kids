@@ -43,7 +43,7 @@ const aiModels = [
     price: "$95/mois",
     numericPrice: 95,
     quality: "Vidéo pro",
-    length: "Quasi illimité (throttling actif)",
+    length: "Illimité (throttling actif)",
     res: "4K (upsample)",
     method: "Prompt + timeline + nodes",
     pros: "Pipeline complet vidéo.",
