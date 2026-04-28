@@ -64,10 +64,22 @@ header h1 {
     font-family: var(--font-data);
     font-weight: 500;
     letter-spacing: 0.5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     /* ... existing styles ... */
 }
 
+/* .btn-launch::before {
+    content: "";
+    width: 3em;
+    height: 3em;
+    background: url('click.svg') no-repeat 1rem;
+    background-size: contain;
+} */
+
 .quality-badge {
+    /* margin-bottom: 1rem; */
     font-family: var(--font-data);
     font-weight: 600; /* Heavier weight for small sizes */
     font-size: 0.7rem;
@@ -79,9 +91,6 @@ header h1 {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
-
-
 
 :root {
     /* Palette Tech World 2026 */
@@ -160,12 +169,15 @@ header h1 {
     flex-direction: column;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid var(--tech-border);
+    border-top: 1px solid rgba(0, 210, 255, 0.4); /* Brighter top edge */
 }
 
 .card:hover {
     transform: scale(1.02);
     border-color: rgba(0, 210, 255, 0.5);
     box-shadow: 0 0 40px rgba(0, 210, 255, 0.15);
+    background: rgba(255, 000, 255, 0.04);
 }
 
 /* Headers Dynamiques */
@@ -176,27 +188,33 @@ header h1 {
 .bg-hybrid { border-left: 4px solid var(--accent-hybrid); background: linear-gradient(90deg, rgba(112, 0, 255, 0.1), transparent); }
 
 .card h2 {
-    margin: 10px 0 0 0;
+    margin: 30px 0px 0px 0px;
     font-size: 1.4rem;
     font-weight: 700;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .icon-node { color: var(--accent-node); margin-left: 10px; filter: drop-shadow(0 0 5px var(--accent-node)); }
 .icon-prompt { color: var(--accent-prompt); margin-left: 10px; filter: drop-shadow(0 0 5px var(--accent-prompt)); }
 
-.card-body { padding: 25px; flex-grow: 1; display: flex; flex-direction: column;}
+.card-body { 
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: -2em;
+}
 
 .quality-badge {
     font-size: .8rem;
     padding: 3px 8px;
     background: rgba(255,255,255,0.05);
     border: 1px solid rgba(255,255,255,0.1);
-    color: #94a3b8;
-    
+    color: #94a3b8;    
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -276,7 +294,10 @@ header h1 {
 
 .price-details-link {
     display: block;
+    display: flex;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     font-weight: 800;
     font-family: var(--font-main);
     font-size: .8rem;
@@ -294,10 +315,23 @@ header h1 {
     background-color: var(--accent-prompt-negative);
     /* filter: invert(1); */
 }
+
+.price-details-link::before {
+    content: "";
+    /* position: absolute; */
+    width: 50px;
+    height: 50px;
+    margin-right: -20px;
+    /* background: white; */
+
+    background: url('click.svg') no-repeat center;
+    background-size: contain;
+}
 #price {
     background: var(--accent-prompt-negative) ;
     color: var(--bg-main)
 }
+
 
 .header {
     display: grid;
@@ -323,4 +357,51 @@ header h1 {
     font-weight: normal;
     opacity: 0.7;
     margin-bottom: 3rem;
+}
+
+.hint-container {
+    position: absolute;
+    /* Keeps it aligned to the right of the center axis */
+    left: 68%;
+    /* left: calc(55% + 150px);  */
+    /* Moves it down to sit beneath the main title height */
+    transform: translateX(calc(-50% + 220px));
+    top: 180px;
+
+    
+    display: flex;
+    align-items: center;
+    padding: 4px 10px;
+    background: rgba(0, 229, 255, 0.03);
+    border: 1px solid rgba(0, 229, 255, 0.15);
+    border-radius: 2px;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+/* Self-contained text styling */
+.hint-text {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1rem;
+    color: #00e5ff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    opacity: 0.8;
+}
+
+/* The indicator dot */
+.hint-container::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background: #00e5ff;
+    border-radius: 50%;
+    margin-right: 8px;
+    box-shadow: 0 0 6px #00e5ff;
+    animation: hint-pulse 2s infinite;
+}
+
+@keyframes hint-pulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
 }

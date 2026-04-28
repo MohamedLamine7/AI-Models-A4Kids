@@ -7,7 +7,7 @@ const aiModels = [
         length: "Limité",
         res: "4K+ (Upscale Nodes)",
         method: "Nodes Uniquement",
-        pros: "Utilise des Nodes (Noeuds).",
+        pros: "Utilisation de Nodes.",
         cons: "Peut être difficile à prendre en main.",
         link: "https://www.comfy.org",
         pricingLink: "https://www.comfy.org/cloud/pricing"
@@ -20,7 +20,7 @@ const aiModels = [
         length: "Illimité",
         res: "4K (Upscalé)",
         method: "Prompt Uniquement",
-        pros: "Mode"+ ' "Pikaso" '+ "en Temps Réel.",
+        pros: "Création de Nodes sur"   + " \"<em>Spaces</em>\".",
         cons: "Mouvements 3D simplistes.",
         link: "https://freepik.com",
         pricingLink: "https://freepik.com/pricing"
@@ -46,7 +46,7 @@ const aiModels = [
     length: "Illimité",
     res: "4K (upsample)",
     method: "Prompt + timeline + nodes",
-    pros: "Pipeline complet vidéo.",
+    pros: "Utilisation de Nodes.",
     cons: "Ralentissements en usage intensif.",
     link: "https://runwayml.com",
     pricingLink: "https://runwayml.com/pricing"
@@ -59,7 +59,7 @@ const aiModels = [
     length: "Illimité",
     res: "HD–4K",
     method: "Prompt",
-    pros: "Un des seuls vrais 'illimités' utilisables en production.",
+    pros: "Un des seuls vrais 'illimités'.",
     cons: "Qualité vidéo moins cinématique.",
     link: "https://elements.envato.com",
     pricingLink: "https://elements.envato.com/pricing"
@@ -73,7 +73,7 @@ const aiModels = [
     res: "1080p",
     method: "Prompt",
     pros: "Très bonne qualité vidéo.",
-    cons: "PAS illimité.",
+    cons: "Pas illimité.",
     link: "https://klingai.com",
     pricingLink: "https://kling.ai/dev/pricing"
 },
