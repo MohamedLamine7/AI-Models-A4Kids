@@ -102,7 +102,7 @@ const aiModels = [
     pros: "Contrôle total, itération avancée.",
     cons: "Limité en volume.",
     link: "https://www.figma.com/blog/",
-    pricingLink: "https://www.figma.com/pricing/"
+    pricingLink: "https://weave.figma.com/pricing"
     
 }
 ];
