@@ -118,7 +118,7 @@ const aiModels = [
     link: "https://higgsfield.ai",
     pricingLink: "https://higgsfield.ai/pricing"
     
-},
+}
     
     
 ];
