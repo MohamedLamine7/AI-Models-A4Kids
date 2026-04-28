@@ -90,6 +90,20 @@ const aiModels = [
     link: "https://deepmind.google/technologies/veo/",
     pricingLink: "https://one.google.com/about/google-ai-plans/"
     
+},
+    {
+    name: "Figma Weave (ex Weavy)",
+    price: "$45/mois",
+    numericPrice: 45,
+    quality: "Qualité contrôlée + workflows avancés",
+    length: "LIMITÉ",
+    res: "4K natif",
+    method: "Prompt",
+    pros: "Contrôle total, itération avancée.",
+    cons: "Limité en volume.",
+    link: "https://www.figma.com/blog/",
+    pricingLink: "https://www.figma.com/pricing/"
+    
 }
 ];
 
