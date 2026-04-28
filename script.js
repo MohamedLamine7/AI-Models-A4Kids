@@ -104,7 +104,23 @@ const aiModels = [
     link: "https://www.figma.com/blog/",
     pricingLink: "https://weave.figma.com/pricing"
     
-}
+},
+    {
+    name: "Higgsfield AI",
+    price: "$99/mois",
+    numericPrice: 99,
+    quality: "Qualité professionnelle",
+    length: "LIMITÉ",
+    res: "4K natif",
+    method: "Prompt et Nodes",
+    pros: "Contrôle total, itération avancée.",
+    cons: "Modèle coûteux en crédits.",
+    link: "https://higgsfield.ai",
+    pricingLink: "https://higgsfield.ai/pricing"
+    
+},
+    
+    
 ];
 
 function render(data) {
