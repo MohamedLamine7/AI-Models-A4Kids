@@ -104,7 +104,7 @@ const aiModels = [
     link: "https://www.figma.com/blog/",
     pricingLink: "https://weave.figma.com/pricing"
     
-},
+},g
     {
     name: "Higgsfield AI",
     price: "$99/mois",
